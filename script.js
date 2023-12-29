@@ -8,7 +8,16 @@ function showContent(target) {
         section.style.display = 'none';
         }
     });
+
+    localStorage.setItem('lastActiveSection', target);
 }
+
+window.addEventListener('load', () => {
+    const lastActiveSection = localStorage.getItem('lastActiveSection');
+    if (lastActiveSection) {
+        showContent(lastActiveSection);
+    }
+});
   
 // Event listener for navigation links
 document.querySelectorAll('.nav-links a').forEach(link => {

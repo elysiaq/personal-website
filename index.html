@@ -9,36 +9,72 @@
             <nav>
                 <!-- <div class="logo">Your Logo</div> -->
                 <ul class="nav-links">
-                    <li><a href="#" data-target="home">Home</a></li>
-                    <li><a href="#" data-target="about">About</a></li>
-                    <li><a href="#" data-target="portfolio">Portfolio</a></li>
-                    <li><a href="#" data-target="contact">Contact</a></li>
-                    <li><a href="#" data-target="resume">Resume</a></li>
+                    <li><a href="#" data-target="home">HOME</a></li>
+                    <li><a href="#" data-target="about">ABOUT</a></li>
+                    <li><a href="#" data-target="portfolio">PORTFOLIO</a></li>
+                    <li><a href="#" data-target="contact">CONTACT</a></li>
+                    <li><a href="#" data-target="resume">RESUME</a></li>
                 </ul>
             </nav>
         </header>
-        <div id="headers">
-            <h1>Elysia's Personal Website</h1>
-        </div>
         
         <div id="home" class="content-section">
-            <h1>Welcome to Home Page</h1>
-            <p>Please check out the other tabs most importantly the portfolio page to links to my recent projects!</p>
+            <div class="container">
+                <div class="column">
+                    <img src="headshot.png" id="headshot">
+                </div>
+                <div class="column" id="info">
+                    <h1>Welcome!</h1>
+                    <p>Thanks for visiting my personal website. Please check out the other pages for more information about who I am and what I hope to do in the future. If you have any questions or comments, feel free to reach me at my number or email on the contact page!</p>
+                </div>
+            </div>
         </div>
     
         <div id="about" class="content-section" style="display: none;">
             <h1>About Me</h1>
-            <p>Hi! My name is Elysia and I am currently a third year student at Washington University in St. Louis studying Computer Science.</p>
+            <p>Hi! My name is Elysia and I am currently a third year student at Washington University in St. Louis studying Computer Science. I am hoping to find a software engineering internship for summer 2024. I am also interested in cyber security and data science.</p>
+<!-- 
+            <h2>Personal Background</h2>
+            <p></p>
+
+            <h2>Professional Background</h2>
+            <p></p> -->
+
         </div>
     
         <div id="portfolio" class="content-section" style="display: none;">
             <h1>Portfolio</h1>
             <p>Below are some of the projects I have worked on:</p>
-            <p><a href="http://ec2-3-145-34-79.us-east-2.compute.amazonaws.com/~elysia/module5/group/calendar.html">Calendar Web Application</a></p>
-            <p><a href="http://ec2-3-145-34-79.us-east-2.compute.amazonaws.com/~elysia/module3/login.php">News Sharing Website</a></p>
-            <p><a href="https://cse204-2023.github.io/10-final-project-elysiaq/">Pokemon Team Builder</a></p>
-            <p><a href="https://cse204-2023.github.io/09-todo-react-elysia-irene/">ToDo Web Application</a></p>
-            <p><a href="https://cse204-2023.github.io/06-brand-redesign-elysiaq/">Redesign of the Disney Website</a></p>
+        
+            <div class="project">
+                <h2><a href="http://ec2-3-145-34-79.us-east-2.compute.amazonaws.com/~elysia/module5/group/calendar.html">Calendar Web Application</a></h2>
+                <p>A web-based calendar application that allows users to manage their schedules and events.</p>
+                <a href="http://ec2-3-145-34-79.us-east-2.compute.amazonaws.com/~elysia/module5/group/calendar.html" class="project-link">View Project</a>
+            </div>
+        
+            <div class="project">
+                <h2><a href="http://ec2-3-145-34-79.us-east-2.compute.amazonaws.com/~elysia/module3/login.php">News Sharing Website</a></h2>
+                <p>An online platform for sharing and reading news articles.</p>
+                <a href="http://ec2-3-145-34-79.us-east-2.compute.amazonaws.com/~elysia/module3/login.php" class="project-link">View Project</a>
+            </div>
+        
+            <div class="project">
+                <h2><a href="https://cse204-2023.github.io/10-final-project-elysiaq/">Pokemon Team Builder</a></h2>
+                <p>Create and manage your Pokemon teams with this interactive team builder.</p>
+                <a href="https://cse204-2023.github.io/10-final-project-elysiaq/" class="project-link">View Project</a>
+            </div>
+        
+            <div class="project">
+                <h2><a href="https://cse204-2023.github.io/09-todo-react-elysia-irene/">ToDo Web Application</a></h2>
+                <p>A simple and efficient ToDo web application to manage your tasks.</p>
+                <a href="https://cse204-2023.github.io/09-todo-react-elysia-irene/" class="project-link">View Project</a>
+            </div>
+        
+            <div class="project">
+                <h2><a href="https://cse204-2023.github.io/06-brand-redesign-elysiaq/">Redesign of the Disney Website</a></h2>
+                <p>A redesign concept for the Disney website, focusing on a modern and user-friendly interface.</p>
+                <a href="https://cse204-2023.github.io/06-brand-redesign-elysiaq/" class="project-link">View Project</a>
+            </div>
         </div>
     
         <div id="contact" class="content-section" style="display: none;">

@@ -33,13 +33,29 @@
         <div id="about" class="content-section" style="display: none;">
             <h1>About Me</h1>
             <p>Hi! My name is Elysia and I am currently a third year student at Washington University in St. Louis studying Computer Science. I am hoping to find a software engineering internship for summer 2024. I am also interested in cyber security and data science.</p>
-<!-- 
-            <h2>Personal Background</h2>
-            <p></p>
 
             <h2>Professional Background</h2>
-            <p></p> -->
-
+            <h3>Computer Security and Privacy Laboratory</h3>
+            <p>
+                Since June 2023, I have been working alongside Doctor Ning Zhang and PhD candidate Oliver Chang on several project regarding computer security in a healthcare setting.
+            </p>
+            <div class="container">
+                <div class="column-left">
+                    <ul>
+                        <li><strong>Detecting Videos Harmful for Photosensitive Epilepsy Patients</strong> - For this project, I wrote a program using C++ and pthreads that will detect videos that are known to cause seizures or physical reactions according to the <a href="https://www.w3.org/WAI/WCAG21/Understanding/seizures-and-physical-reactions">Web Content Accessibility Guidelines</a>. The key criteria for detecting these videos were in regards to the frequency of flashes between frames and area of flash. For every video, I utilized OpenCV to process individual frames and stored the key information with a sliding window approach. Each frame was split into multiple sections processed through pthreads to allow for a faster runtime. This program had an average 34% decrease in runtime for a 40 second video and an average 67% decrease in runtime for a 5 second video compared to previous lab iterations.</li>
+                        <li><strong>Privacy in Women's Health Applications</strong> - For this project, I selected and systemized Women's Health Applications on Google Play Store. Next, I wrote scripts to conduct topic analysis on the play store reviews, static analysis on the permissions, libraries, and trackers on each application's APK file, and dynamic analysis with a UI monkey. The results of the analysis were compared to Google Play Store privacy guidelines and each application's privacy policy to identify discrepancies and necessary improvements to data privacy.</li>       
+                    </ul>
+                </div>
+                <div class="column-right">
+                    <img src="research poster.png" id="poster">
+                </div>
+            </div>
+            <div id="popup">
+                <div id="close">&times;</div>
+                <div id="popup-content">
+                    <img src="research poster.png" id="popup-image">
+                </div>
+             </div>
         </div>
     
         <div id="portfolio" class="content-section" style="display: none;">

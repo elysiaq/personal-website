@@ -28,3 +28,22 @@ document.querySelectorAll('.nav-links a').forEach(link => {
         showContent(targetSection);
     });
 });
+
+const image = document.getElementById("poster");
+image.addEventListener("click", function() {
+    popup(image);
+});
+
+function popup(image) {
+    const popup = document.getElementById("popup");
+    popup.style.display = "block";
+}
+
+const closeButton = document.getElementById("close");
+closeButton.addEventListener('click', function() {
+    const popup = document.getElementById("popup");
+    const container = document.getElementById("about");
+
+    popup.style.display = "none";
+    container.style.display = "block";
+})

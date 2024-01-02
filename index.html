@@ -7,7 +7,6 @@
     <body>
         <header>
             <nav>
-                <!-- <div class="logo">Your Logo</div> -->
                 <ul class="nav-links">
                     <li><a href="#" data-target="home">HOME</a></li>
                     <li><a href="#" data-target="about">ABOUT</a></li>
@@ -32,17 +31,22 @@
     
         <div id="about" class="content-section" style="display: none;">
             <h1>About Me</h1>
-            <p>Hi! My name is Elysia and I am currently a third year student at Washington University in St. Louis studying Computer Science. I am hoping to find a software engineering internship for summer 2024. I am also interested in cyber security and data science.</p>
+            <p>Hi! My name is Elysia (pronounced eh-lee-sea-ah) and I am currently a third year student at Washington University in St. Louis studying Computer Science. I am hoping to find a software engineering internship for summer 2024. I also have experience and interest in cyber security and data science! Please click on the links below to learn more about my past experiences and future aspirations.</p>
 
-            <h2>Professional Background</h2>
+            <ul>
+                <li><a href="#1">Professional Background</a></li>
+                <li><a href="#2">Personal Background</a></li>
+                <li><a href="#3">Educational Background</a></li>
+            </ul>
+
+            <h2 id="1">Professional Background</h2>
+
             <h3>Computer Security and Privacy Laboratory</h3>
-            <p>
-                Since June 2023, I have been working alongside Doctor Ning Zhang and PhD candidate Oliver Chang on several project regarding computer security in a healthcare setting.
-            </p>
+            <p>Since June 2023, I have been working alongside Doctor Ning Zhang and PhD candidate Oliver Chang on several project regarding computer security in a healthcare setting.</p>
             <div class="container">
                 <div class="column-left">
                     <ul>
-                        <li><strong>Detecting Videos Harmful for Photosensitive Epilepsy Patients</strong> - For this project, I wrote a program using C++ and pthreads that will detect videos that are known to cause seizures or physical reactions according to the <a href="https://www.w3.org/WAI/WCAG21/Understanding/seizures-and-physical-reactions">Web Content Accessibility Guidelines</a>. The key criteria for detecting these videos were in regards to the frequency of flashes between frames and area of flash. For every video, I utilized OpenCV to process individual frames and stored the key information with a sliding window approach. Each frame was split into multiple sections processed through pthreads to allow for a faster runtime. This program had an average 34% decrease in runtime for a 40 second video and an average 67% decrease in runtime for a 5 second video compared to previous lab iterations.</li>
+                        <li><strong>Detecting Videos Harmful for Photosensitive Epilepsy Patients</strong> - For this project, I wrote a program using C++ and pthreads that will detect videos that are known to cause seizures or physical reactions according to the <a href="https://www.w3.org/WAI/WCAG21/Understanding/seizures-and-physical-reactions">Web Content Accessibility Guidelines (WCAG 2.1)</a>. The key criteria for detecting these videos were in regards to the frequency of flashes between frames and area of flash. For every video, I utilized OpenCV to process individual frames and stored the key information with a sliding window approach. Each frame was split into multiple sections processed through pthreads to allow for a faster runtime. This program had an average 34% decrease in runtime for a 40 second video and an average 67% decrease in runtime for a 5 second video compared to previous lab iterations. Please refer to the research poster on the right for more information on the algorithms used to detect the harmful videos.</li>
                         <li><strong>Privacy in Women's Health Applications</strong> - For this project, I selected and systemized Women's Health Applications on Google Play Store. Next, I wrote scripts to conduct topic analysis on the play store reviews, static analysis on the permissions, libraries, and trackers on each application's APK file, and dynamic analysis with a UI monkey. The results of the analysis were compared to Google Play Store privacy guidelines and each application's privacy policy to identify discrepancies and necessary improvements to data privacy.</li>       
                     </ul>
                 </div>
@@ -50,6 +54,34 @@
                     <img src="research poster.png" id="poster">
                 </div>
             </div>
+            <p>From this experience, I learned about parallel programming and Android application analysis. Additionally, besides those technical skills, I also picked up skills understanding documentation, adapting outdated code, and optimizing runtime.</p>
+            
+            <h3>Data Structures and Algorithms Teaching Assistant</h3>
+            <p>As a teaching assistant, I hold weekly office hours for students requesting additional help mainly regarding challenging concepts or code debugging. Additionally, around exam week, I volunteer to host the additional review sessions focusing on the current exam's concepts. Besides working directly with students, I also give feedback through assignments and grading. As this course is one of the fundamental courses in my university's computer science cirriculum, I gain the chance to interact with students of various backgrounds and cater my guidance to each student.</p>
+            
+            <!-- <h3>Student Technology Center</h3>
+            <p></p> -->
+
+            <h2 id="2">Personal Background</h2>
+            <p>I currently live in Seattle, Washington but my family originally moved from Singapore. If you are interested in Singapore, make sure to check out this <a href="https://cse204-2023.github.io/04-city-guide-css-elysiaq/">city guide</a> I made for Singapore when I was first learning and experimenting with HTML/CSS!</p>
+            
+            
+            <h3>Values and Aspirations</h3>
+            <p>I would describe myself as someone who is open-minded and easygoing. Therefore, I am always willing to tackle new challenges! I am looking for an internship in software engineering, however, I am very excited to also try out different areas of expertise within computer science. As a result, I hope to find a company that has fosters collaboration and focuses on finding the best fit for each individual. I would like to have the guidance and ability to experiment in various fields within a company.</p>
+            
+            <h3>Hobbies and Interests</h3>
+            <ul>
+                <li><strong>Samulnori</strong> - I am a part of my school's Samulnori performing arts group! It is a traditional Korean drumming performance and I play the buk, a flat round drum. We perform every year at my school's Lunar New Year Festival and Spirit of Korea.</li>
+                <li><strong>Cooking</strong> - I love cooking and eating. As a result, I take part in my school's Food Recovery Network, where we recover food around campus and cook them into meals ready for donation. Some of my favorite foods to make and eat are pad thai, hot pot, and all types of noodles.</li>
+                <li>Besides those hobbies, I am also love Legos, Formula One Racing, and animals.</li>
+            </ul>
+
+            <h2 id="3">Educational Background</h2>
+            <h3>Transcript</h3>
+            <iframe src="transcript.pdf" width="100%" height="600px"></iframe>
+
+
+            <!-- for the research poster expansion -->
             <div id="popup">
                 <div id="close">&times;</div>
                 <div id="popup-content">
@@ -64,19 +96,22 @@
         
             <div class="project">
                 <h2><a href="http://ec2-3-145-34-79.us-east-2.compute.amazonaws.com/~elysia/module5/group/calendar.html">Calendar Web Application</a></h2>
-                <p>A web-based calendar application that allows users to manage their schedules and events.</p>
+                <p>A web-based calendar application that allows users to register for an account and save their personal events. Each event entered will be displayed on the calendar based on the date and time. Users can modify their events and the calendar updates instantly. Additionally, users can categorize their events and filter the display based on those categories. Easy lookup is enabled with a search feature based on the name of the event.</p>
+                <p>Tech Stack: HTML, CSS, JavaScript, PHP, MySQL, Amazon AWS</p>
                 <a href="http://ec2-3-145-34-79.us-east-2.compute.amazonaws.com/~elysia/module5/group/calendar.html" class="project-link">View Project</a>
             </div>
         
             <div class="project">
                 <h2><a href="http://ec2-3-145-34-79.us-east-2.compute.amazonaws.com/~elysia/module3/login.php">News Sharing Website</a></h2>
-                <p>An online platform for sharing and reading news articles.</p>
+                <p>A platform for users to share and read articles. Different functionalities in place for users and guests. Logged in users can create, edit, and delete stories and comments. Guests can only view and like stories. Each story is downloadable in a text file format.</p>
+                <p>Tech Stack: HTML, CSS, PHP, MySQL, Amazon AWS</p>
                 <a href="http://ec2-3-145-34-79.us-east-2.compute.amazonaws.com/~elysia/module3/login.php" class="project-link">View Project</a>
             </div>
         
             <div class="project">
-                <h2><a href="https://cse204-2023.github.io/10-final-project-elysiaq/">Pokemon Team Builder</a></h2>
-                <p>Create and manage your Pokemon teams with this interactive team builder.</p>
+                <h2><a href="https://cse204-2023.github.io/10-final-project-elysiaq/">Pok&eacute;mon Team Builder</a></h2>
+                <p>An interactive Pok&eacute;mon team builder that allows users to generate Pok&eacute;mon cards and build teams with different Pok&eacute;mon sets. Choose six cards from any of the sets to finish building a team. This project utilizes a REST API, <a href="https://docs.pokemontcg.io/">Pok&eacute;mon TCG API</a>, to generate the cards.</p>
+                <p>Tech Stack: HTML, CSS, JavaScript, REST API, Github Pages</p>
                 <a href="https://cse204-2023.github.io/10-final-project-elysiaq/" class="project-link">View Project</a>
             </div>
         
@@ -95,8 +130,8 @@
     
         <div id="contact" class="content-section" style="display: none;">
             <h1>Contact Me</h1>
-            <p>Email: elysiaquah@gmail.com</p>
-            <p>Personal Number: +1 (425)802-4074</p>
+            <p>Email: <a href="mailto:elysiaquah@gmail.com">elysiaquah@gmail.com</a></p>
+            <p>Personal Number: <a href="tel:+14258024074">+1 (425) 802-4074</a></p>
             <p>LinkedIn: <a href="https://www.linkedin.com/in/elysiaquah">www.linkedin.com/in/elysiaquah</a></p>
         </div>
     

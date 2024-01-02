@@ -14,9 +14,13 @@ function showContent(target) {
 
 window.addEventListener('load', () => {
     const lastActiveSection = localStorage.getItem('lastActiveSection');
+    const homeSection = document.getElementById('home');
     if (lastActiveSection) {
         showContent(lastActiveSection);
+    } else {
+        homeSection.style.display = 'block';
     }
+    document.body.style.display = 'block';
 });
   
 // Event listener for navigation links

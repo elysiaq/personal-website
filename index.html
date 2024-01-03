@@ -92,39 +92,51 @@
     
         <div id="portfolio" class="content-section" style="display: none;">
             <h1>Portfolio</h1>
-            <p>Below are some of the projects I have worked on:</p>
+            <p>Below are some of the projects I have worked on. Toggle the checkboxes to filter out specific languages and frameworks.</p>
+
+            <div id="filters">
+                <label><input type="checkbox" class="filter-checkbox" value="HTML">HTML</label>
+                <label><input type="checkbox" class="filter-checkbox" value="CSS">CSS</label>
+                <label><input type="checkbox" class="filter-checkbox" value="JavaScript">JavaScript</label>
+                <label><input type="checkbox" class="filter-checkbox" value="React">React</label>
+                <label><input type="checkbox" class="filter-checkbox" value="PHP">PHP</label>
+                <label><input type="checkbox" class="filter-checkbox" value="MySQL">MySQL</label>
+                <label><input type="checkbox" class="filter-checkbox" value="REST API">REST API</label>
+                <label><input type="checkbox" class="filter-checkbox" value="Github Pages">Github Pages</label>
+            </div>
         
             <div class="project">
                 <h2><a href="http://ec2-3-145-34-79.us-east-2.compute.amazonaws.com/~elysia/module5/group/calendar.html">Calendar Web Application</a></h2>
                 <p>A web-based calendar application that allows users to register for an account and save their personal events. Each event entered will be displayed on the calendar based on the date and time. Users can modify their events and the calendar updates instantly. Additionally, users can categorize their events and filter the display based on those categories. Easy lookup is enabled with a search feature based on the name of the event.</p>
-                <p>Tech Stack: HTML, CSS, JavaScript, PHP, MySQL, Amazon AWS</p>
+                <p class="project-tech-stack">Tech Stack: HTML, CSS, JavaScript, PHP, MySQL, Amazon AWS</p>
                 <a href="http://ec2-3-145-34-79.us-east-2.compute.amazonaws.com/~elysia/module5/group/calendar.html" class="project-link">View Project</a>
             </div>
         
             <div class="project">
                 <h2><a href="http://ec2-3-145-34-79.us-east-2.compute.amazonaws.com/~elysia/module3/login.php">News Sharing Website</a></h2>
                 <p>A platform for users to share and read articles. Different functionalities in place for users and guests. Logged in users can create, edit, and delete stories and comments. Guests can only view and like stories. Each story is downloadable in a text file format.</p>
-                <p>Tech Stack: HTML, CSS, PHP, MySQL, Amazon AWS</p>
+                <p class="project-tech-stack">Tech Stack: HTML, CSS, PHP, MySQL, Amazon AWS</p>
                 <a href="http://ec2-3-145-34-79.us-east-2.compute.amazonaws.com/~elysia/module3/login.php" class="project-link">View Project</a>
             </div>
         
             <div class="project">
                 <h2><a href="https://cse204-2023.github.io/10-final-project-elysiaq/">Pok&eacute;mon Team Builder</a></h2>
                 <p>An interactive Pok&eacute;mon team builder that allows users to generate Pok&eacute;mon cards and build teams with different Pok&eacute;mon sets. Choose six cards from any of the sets to finish building a team. This project utilizes a REST API, <a href="https://docs.pokemontcg.io/">Pok&eacute;mon TCG API</a>, to generate the cards.</p>
-                <p>Tech Stack: HTML, CSS, JavaScript, REST API, Github Pages</p>
+                <p class="project-tech-stack">Tech Stack: HTML, CSS, JavaScript, REST API, Github Pages</p>
                 <a href="https://cse204-2023.github.io/10-final-project-elysiaq/" class="project-link">View Project</a>
             </div>
         
             <div class="project">
                 <h2><a href="https://elysiaq.github.io/ToDo/">ToDo Web Application</a></h2>
                 <p>A simple and efficient ToDo web application to manage your tasks. Each ToDo is saved in a server that is contacted through AJAX calls. Additionally, ToDos can be sorted alphabetically.</p>
-                <p>Tech Stack: HTML, CSS, JavaScript, React, Github Pages</p>
+                <p class="project-tech-stack">Tech Stack: HTML, CSS, JavaScript, React, Github Pages</p>
                 <a href="https://elysiaq.github.io/ToDo/" class="project-link">View Project</a>
             </div>
         
             <div class="project">
                 <h2><a href="https://cse204-2023.github.io/06-brand-redesign-elysiaq/">Redesign of the Disney Website</a></h2>
-                <p>A redesign concept for the Disney website, focusing on a modern and user-friendly interface.</p>
+                <p>A redesign concept for the Disney website, focusing on a modern design. This project has no functionality and was mainly for design purposes.</p>
+                <p class="project-tech-stack">Tech Stack: HTML, CSS, Github Pages</p>
                 <a href="https://cse204-2023.github.io/06-brand-redesign-elysiaq/" class="project-link">View Project</a>
             </div>
         </div>

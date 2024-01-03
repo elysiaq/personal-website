@@ -119,6 +119,18 @@ nav {
     color: #6d87bc;
 }
 
+#filters {
+    margin-bottom: 10px;
+}
+
+.filter-checkbox{
+    margin-right: 4px;
+}
+
+#filters label {
+    margin-right: 10px;
+}
+
 .content-section {
     padding: 50px;
     margin: 20px 0;

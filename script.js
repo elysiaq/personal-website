@@ -51,3 +51,29 @@ closeButton.addEventListener('click', function() {
     popup.style.display = "none";
     container.style.display = "block";
 })
+
+document.addEventListener('DOMContentLoaded', () => {
+    const checkboxes = document.querySelectorAll('.filter-checkbox');
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', filterProjects);
+    });
+
+    function filterProjects() {
+        const selectedTech = Array.from(checkboxes)
+            .filter(checkbox => checkbox.checked)
+            .map(checkbox => checkbox.value);
+
+        const projects = document.querySelectorAll('.project');
+        projects.forEach(project => {
+            const projectTech = project.querySelector('.project-tech-stack').textContent;
+            const projectTechWithoutLabel = projectTech.substring('Tech Stack: '.length); // Remove "Tech Stack: " from the beginning
+            const projectTechArray = projectTechWithoutLabel.split(', ');
+
+            if (selectedTech.every(tech => projectTechArray.includes(tech))) {
+                project.style.display = 'block';
+            } else {
+                project.style.display = 'none';
+            }
+        });
+    }
+});
